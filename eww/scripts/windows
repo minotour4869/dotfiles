@@ -1,0 +1,11 @@
+#!/bin/sh
+
+windows() {
+    id="$(xprop -root _NET_ACTIVE_WINDOW | cut -d ' ' -f 5)"
+    # echo $id
+    xprop -id "$(xprop -root _NET_ACTIVE_WINDOW | cut -d ' ' -f 5)" WM_NAME | cut -d '"' -f2 | cut -d '"' -f1
+}
+
+while true; do
+    windows
+done

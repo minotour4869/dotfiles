@@ -1,0 +1,38 @@
+(include "widgets/main-bar/window.yuck")
+(include "widgets/main-bar/date-time.yuck")
+
+(defwindow bar
+	:monitor 0
+	:geometry 
+		(geometry
+			:anchor "top center"
+			:x "0%"
+			:y "8px"
+			:width "98.8%"
+			:height "24px"
+		)
+  	:stacking "fg"
+  	:reserve 
+  		(struts 
+			:distance "20px" 
+			:side "top"
+		)
+	(bar)
+)
+
+(defwidget bar[] 
+	; Title
+	(box
+		(window
+			:halign "start"
+		)
+		(datetime
+			:halign "center"
+		)
+		(label
+			:text ""
+			:halign "end"
+		)
+		
+	)
+)

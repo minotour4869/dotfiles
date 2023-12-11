@@ -1,0 +1,11 @@
+(defwidget workspace[]
+    (eventbox 
+        :onhover "${eww} update ws-toggle=true"
+        :onhoverlost "${eww} update ws-toggle=false"
+        (box
+            :orientation "v"
+            :space-evenly "false"
+            "Workspace")
+    ))
+
+(defvar ws-toggle false)

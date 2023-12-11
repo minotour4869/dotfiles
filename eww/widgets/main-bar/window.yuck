@@ -1,0 +1,10 @@
+(deflisten window-name :initial ""
+    "scripts/windows"
+)
+
+(defwidget window[] 
+    (box 
+        :halign "start"
+        (label :text window-name)
+    )
+)
