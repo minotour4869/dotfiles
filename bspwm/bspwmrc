@@ -1,0 +1,27 @@
+#! /bin/sh
+
+pkill picom
+picom -b &
+sxhkd &
+dunst &
+feh --bg-center $HOME/Pictures/background.png &
+$HOME/.config/polybar/launch.sh &
+ibus-daemon -rd &
+
+bspc monitor -d  󰈹 󰙯 󰓇
+
+bspc config border_width         2
+bspc config window_gap          12
+
+bspc config split_ratio          0.52
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+
+bspc rule -a Gimp desktop='^8' state=floating follow=on
+bspc rule -a firefox desktop='^2'
+bspc rule -a waterfox desktop='^2'
+bspc rule -a mplayer2 state=floating
+bspc rule -a Kupfer.py focus=on
+bspc rule -a Screenkey manage=off
+bspc rule -a Spotify desktop='^4'
+bspc rule -a discord desktop='^3'

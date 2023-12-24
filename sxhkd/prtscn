@@ -1,0 +1,17 @@
+#!/bin/bash
+
+if [ "${1:0:1}" == "-" ]; then
+    FILE='eval tee ~/Pictures/$(date +'%Y-%m-%d-%T').png | xclip -selection clipboard -t image/png'
+    MODE=${1:1}
+else
+    FILE='xclip -selection clipboard -t image/png -i'
+    MODE=$1
+fi
+
+# echo $FILE $MODE
+
+if [ "$MODE" == "full" ]; then
+    maim | $FILE
+elif [ "$MODE" == "select" ]; then
+    maim -s | $FILE
+fi

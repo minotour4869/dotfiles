@@ -1,0 +1,41 @@
+#!/bin/sh
+
+TEXT=ffffff
+RING_IDLE=ccaa87
+RING_CLICK=bb6588
+RING_DELETE=e4a8ca
+
+BLANK=00000000
+
+i3lock \
+--ignore-empty-password \
+--color=0c0c0cdd \
+\
+--force-clock \
+--time-pos="960:480" \
+--time-size=48 \
+--time-color=$TEXT \
+--time-str="%I:%M %p" \
+--date-color=$TEXT \
+--date-size=16 \
+--date-str="%a, %d/%m/%Y" \
+\
+--inside-color=$BLANK \
+--insidever-color=$BLANK \
+--insidewrong-color=$BLANK \
+\
+--line-color=$BLANK \
+--separator-color=ffffff \
+\
+--radius 20 \
+--ring-width 5 \
+\
+--ring-color=$RING_IDLE \
+--keyhl-color=$RING_CLICK \
+--bshl-color=$RING_DELETE \
+--ringver-color=$RING_CLICK \
+--ringwrong-color=ff0000 \
+\
+--verif-text="" \
+--wrong-text="" \
+--noinput-text="" \

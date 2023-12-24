@@ -1,0 +1,9 @@
+#!/bin/sh
+
+mode=$(ibus engine)
+
+if [ "$mode" == "Bamboo" ]; then
+    ibus engine BambooUs
+else
+    ibus engine Bamboo
+fi
