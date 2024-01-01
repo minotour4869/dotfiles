@@ -1,8 +1,11 @@
 local keymap = vim.keymap
 local nvim_keymap = vim.api.nvim_set_keymap
 
--- Neotree
-keymap.set("n", "<leader>m", ":Neotree<CR>", { noremap = true, silent = true })
+-- Nvim-tree
+keymap.set("n", "<leader>tr", ":NvimTreeToggle<CR>", { noremap = true, silent = true })
+keymap.set("n", "<leader>sx", require('nvim-tree.api').node.open.horizontal, { noremap = true })
+keymap.set("n", "<leader>sv", require('nvim-tree.api').node.open.vertical, { noremap = true })
+
 
 -- Pane nav
 keymap.set("n", "<C-h>", "<C-w>h", opts)
