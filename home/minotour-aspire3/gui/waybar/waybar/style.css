@@ -1,12 +1,13 @@
 * {
     font-family: "Nunito", "Font Awesome 6 Free";
-    font-size: 14px;
+    font-size: 12px;
     min-height: 0;
 }
 
 window#waybar {
 	background-color: rgba(0, 0, 0, 0);	
 	border: none;
+	border-radius: 0;
 	transition-property: background-color;
 	transition-duration: 0.5s;
 }
