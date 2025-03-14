@@ -3,6 +3,8 @@
 	imports = [
 		./nix.nix
 		./programs.nix
+		./services.nix
+		./greetd.nix
         ./users.nix
 		./xdg.nix
 	];

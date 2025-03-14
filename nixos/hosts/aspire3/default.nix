@@ -11,6 +11,7 @@
 			enable = true;
 			enable32Bit = true;
 		};
+		# alsa.enable = true;
 	};
 
 	services = {

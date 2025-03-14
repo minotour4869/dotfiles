@@ -11,7 +11,9 @@
 	"modules-center": [
 		"clock"
 	],
-	"modules-right": [],
+	"modules-right": [
+		"tray"
+	],
 	"hyprland/workspaces": {
 		"format": "{icon}",
 		"format-icons": {
@@ -23,5 +25,33 @@
 			// "default": "",
 			// "active": "",
 		},
-	}
+	},
+	"clock": {
+		"interval": 1,
+		"format": "{:%I:%M %p}",
+		"format-alt": "{:%d/%m/%y %I:%M:%S %p}",
+		"tooltip-format": "<tt><small>{calendar}</small></tt>",
+		"calendar": {
+            "mode"          : "month",
+            "mode-mon-col"  : 3,
+            "weeks-pos"     : "right",
+            "on-scroll"     : 1,
+            "format": {
+				"months":     "<span color='#ffead3'><b>{}</b></span>",
+                "days":       "<span color='#ecc6d9'><b>{}</b></span>",
+                "weeks":      "",
+                "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
+                "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
+            },
+			"actions": {
+				"on-click-right": "mode",
+				"on-scroll-up": "shift_up",
+				"on-scroll-down": "shift_down",
+			},
+        },
+	},
+	"tray": {
+		"icon-size": 12,
+		"spacing": 5,
+	},
 }
