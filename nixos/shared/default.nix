@@ -24,6 +24,7 @@
 		packages = with pkgs; [
 			nerd-fonts.caskaydia-cove
 			roboto
+			
 			font-awesome
 		];
 		fontconfig = {

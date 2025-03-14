@@ -1,0 +1,29 @@
+{
+	"layer": "top",
+	"exclusive": true,
+	"margin-top": 5,
+	"margin-left": 20,
+	"margin-right": 20,
+	"modules-left": [
+		"hyprland/workspaces"
+	],
+	"modules-center": [
+		"clock"
+	],
+	"modules-right": [],
+	"hyprland/workspaces": {
+		"format": "{icon}",
+		"format-icons": {
+			"1": "",
+			"2": "",
+			"3": "",
+			"4": "",
+			"5": "",
+			// "default": "",
+			// "active": "",
+		},
+		"persistent-workspaces": {
+             "*": 5,
+		},
+	}
+}

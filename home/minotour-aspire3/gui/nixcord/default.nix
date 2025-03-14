@@ -1,6 +1,6 @@
 {
 	programs.nixcord = {
-		enable = false;
+		enable = true;
 		discord.enable = false;
 		vesktop = {
 			enable = true;
