@@ -23,8 +23,5 @@
 			// "default": "",
 			// "active": "",
 		},
-		"persistent-workspaces": {
-             "*": 5,
-		},
 	}
 }
