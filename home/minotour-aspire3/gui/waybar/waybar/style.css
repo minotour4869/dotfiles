@@ -1,15 +1,14 @@
 * {
-    border: none;
-    border-radius: 0;
     font-family: "Nunito", "Font Awesome 6 Free";
     font-size: 14px;
     min-height: 0;
-    transition-property: background-color;
-    transition-duration: 0.2s;
 }
 
 window#waybar {
-	background-color: rgba(7, 2, 7, 0.0);
+	background-color: rgba(0, 0, 0, 0);	
+    border: none;
+    transition-property: background-color;
+    transition-duration: 0.5s;
 }
 
 #workspace button
