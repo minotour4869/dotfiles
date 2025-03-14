@@ -1,4 +1,4 @@
-{ pkgs, system, zen-browser, ... }:
+{ pkgs, system, inputs, ... }:
 let
 	cursorTheme = {
 		name = "Bibata-Modern-Classic";
@@ -7,7 +7,9 @@ let
 in
 {
 	imports = [
-		./hyprland	
+		./hyprland
+		inputs.nixcord.homeManagerModules.nixcord
+		./nixcord
 	];
 
 	home = {
