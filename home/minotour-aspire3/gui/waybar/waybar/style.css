@@ -16,6 +16,8 @@ button {
 	/* Use box-shadow instead of border so the text isn't offset */
 	box-shadow: inset 0 0 transparent;
 	color: #ffffff;
+	border: none;
+	border-radius: 0;
 }
 
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
@@ -24,7 +26,7 @@ button:hover {
 	box-shadow: inset 0 0 #ffffff;
 }
 
-#workspaces button.visible {
+#workspaces button.persistent {
 	color: rgb(100, 100, 100);
 }
 
