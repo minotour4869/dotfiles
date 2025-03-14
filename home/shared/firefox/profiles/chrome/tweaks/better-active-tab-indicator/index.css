@@ -1,0 +1,18 @@
+@import "./options.css";
+@import "./custom-options.css";
+
+#sidebar-main .tab-background {
+	position: relative !important;
+
+	&[selected]::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		width: calc(2 * var(--tweaks-bati-indicator-width));
+		background: linear-gradient(90deg, var(--tweaks-bati-indicator-color) 50%, transparent 50%);
+		margin-block: var(--tab-block-margin);
+		border-radius: var(--border-radius-medium) 0 0 var(--border-radius-medium);
+	}
+}
