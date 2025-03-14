@@ -30,5 +30,5 @@ button:hover {
 }
 
 #workspace button.empty {
-	color: #ffffffaa;
+	color: rgb(100, 100, 100);
 }
