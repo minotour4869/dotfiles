@@ -1,4 +1,5 @@
 {
+	"reload_style_on_change": true, // debug purpose
 	"layer": "top",
 	"exclusive": true,
 	"margin-top": 5,
