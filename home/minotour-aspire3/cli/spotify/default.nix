@@ -2,9 +2,10 @@
 {
 	home.packages = with pkgs; [
 		spotifyd
-		spotify-tui
+		spotify-player
+	programs.spotify-tui.enable = true;
 		pass
-		gnupg1
+		pinentry gnupg1
 	];
 
 	services.spotifyd = {

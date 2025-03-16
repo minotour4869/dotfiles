@@ -4,7 +4,7 @@
 		discord = {
 			enable = true;
 			vencord.enable = true;
-			openASAR.enable = true;
+			# openASAR.enable = true;
 		};
 		vesktop.enable = false;
 		config = {
