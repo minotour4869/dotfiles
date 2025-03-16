@@ -10,6 +10,7 @@ in
 		./hyprland
 		inputs.nixcord.homeManagerModules.nixcord
 		./nixcord
+		# inputs.mediaplayer.packages.${system}.default
 		./waybar
 	];
 

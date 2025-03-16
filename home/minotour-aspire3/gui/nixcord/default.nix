@@ -1,10 +1,12 @@
 {
 	programs.nixcord = {
 		enable = true;
-		discord.enable = false;
-		vesktop = {
+		discord = {
 			enable = true;
+			vencord.enable = true;
+			openASAR.enable = true;
 		};
+		vesktop.enable = false;
 		config = {
 			themeLinks = [
 				"https://luckfire.github.io/amoled-cord/src/support/betterdiscord/compiled.css"
@@ -33,10 +35,6 @@
 				showMeYourName.enable = true;
 				typingTweaks.enable = true;
 				whoReacted.enable = true;
-
-				webKeybinds.enable = true;
-				webRichPresence.enable = true;
-				webScreenShareFixes.enable = true;
 			};
 		};
 	};

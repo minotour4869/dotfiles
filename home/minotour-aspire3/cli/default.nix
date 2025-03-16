@@ -4,5 +4,6 @@
 		./fastfetch
 		./nvim
 		./zsh
+		./spotify
 	];
 }

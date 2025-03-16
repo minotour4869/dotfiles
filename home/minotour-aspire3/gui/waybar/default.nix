@@ -1,5 +1,9 @@
 {pkgs, ...}:
 {
+	home.packages = with pkgs; [
+		playerctl
+	];
+
 	programs.waybar = {
 		enable = true;
 		package = pkgs.waybar;

@@ -1,20 +1,27 @@
+{ pkgs, ... }: 
+let
+	tuigreet = "${pkgs.greetd.tuigreet}/bin/tuigreet";
+	hyprland-session = "${pkgs.hyprland}/share/wayland-sessions";
+	greeting = "Chasing your light, at 25:00";
+in 
 {
-  pkgs,
-  inputs,
-  ...
-}: let
-  tuigreet = "${pkgs.greetd.tuigreet}/bin/tuigreet";
-  hyprland-session = "${pkgs.hyprland-patched}/share/wayland-sessions";
-in {
-  services.greetd = {
-    enable = true;
-    settings = {
-      default_session = {
-        command = "${tuigreet} --time --remember --remember-session --sessions ${hyprland-session}";
-        user = "greeter";
-      };
-    };
-  };
+	services.greetd = {
+		enable = true;
+		settings = {
+			default_session = {
+				command = ''
+					${tuigreet} \
+						--greeting "${greeting}" \
+						--asterisks \
+						--time \
+						--remember \
+						--remember-session \
+						--sessions ${hyprland-session}
+				'';
+				user = "greeter";
+			};
+		};
+	};
 
   # this is a life saver.
   # literally no documentation about this anywhere.

@@ -1,18 +1,24 @@
 {
 	"reload_style_on_change": true, // debug purpose
 	"layer": "top",
+	"spacing": 4,
 	"exclusive": true,
 	"margin-top": 5,
 	"margin-left": 20,
 	"margin-right": 20,
 	"modules-left": [
-		"hyprland/workspaces"
+		"hyprland/workspaces",
+		"mpris"
 	],
 	"modules-center": [
 		"clock"
 	],
 	"modules-right": [
-		"tray"
+		"tray",
+		"wireplumber",
+		"network",
+		"battery",
+		"group/powers",
 	],
 	"hyprland/workspaces": {
 		"format": "{icon}",
@@ -25,6 +31,9 @@
 			// "default": "",
 			// "active": "",
 		},
+		"persistent-workspaces": {
+			"*": 5,
+		}
 	},
 	"clock": {
 		"interval": 1,
@@ -54,4 +63,76 @@
 		"icon-size": 12,
 		"spacing": 5,
 	},
+	"mpris": {
+		// "interval": 1,
+		"player-icons": {
+			"firefox": "",
+			"spotify": "",
+		},
+		"status-icons": {
+			"playing": "▶",
+			"paused": "⏸",
+		},
+		"format": "{player_icon} {status_icon} {artist} - {title}",
+		"format-stopped": "",
+		"tooltip-format": "{dynamic}",
+		"format-stopped": "",
+		"dynamic-len": 50,
+	},
+	"wireplumber": {
+		"format": "{icon}",
+		"format-muted": "",
+		"on-click": "pavucontrol",
+		"format-icons": ["", "", ""]
+	},
+	"network": {
+		"format-wifi": "",
+		"tooltip-format-wifi": "{essid} ({signalStrength}%)",
+		"format-ethernet": "",
+		"tooltip-format-ethernet": "",
+		"format-disconnected": "",
+		"tooltip-format-disconnected": "disconnected",
+
+		"on-click": "kitty nmtui"
+	},
+	"battery": {
+		"interval": 60,
+		"states": {
+			"warning": 20,
+			"critical": 10,
+		},
+		"format": "{icon}",
+		"format-icons": ["", "", "", "", ""],
+		"format-time": "{H}h {M}min left",
+		"tooltip-format": "{capacity}% ({time})",
+	},
+	"group/powers": {
+		"orientation": "inherit",
+		"drawer": {
+			"transition-duration": 500,
+			"children-class": "not-power",
+			"transition-left-to-right": false,
+		},
+		"modules": [
+			"custom/power",
+			// "custom/logout",
+			"custom/lock",
+			"custom/reboot"
+		],
+	},
+	"custom/power": {
+		"format": "",
+		"tooltip": false,
+		"on-double-click": "halt",
+	},
+	"custom/lock": {
+		"format": "",
+		"tooltip": false,
+		"on-click": "swaylock",
+	},
+	"custom/reboot": {
+		"format": "󰜉",
+		"tooltip": false,
+		"on-double-click": "reboot",
+	}
 }

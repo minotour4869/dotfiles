@@ -1,7 +1,7 @@
 { pkgs, ... }:
 {
 	# environment.systemPackages = [
-	# 	pkgs.sddm-astronaut
+	# 	pkgs.pavucontrol
 	# ];
 	services = {
 		dbus.enable = true;
@@ -15,6 +15,17 @@
 
 			pulse.enable = true;
 			wireplumber.enable = true;
+		};
+
+		mpd = {
+			enable = true;
+			startWhenNeeded = true;
+			extraConfig = ''
+				audio_output {
+					type "pipewire"
+					name "My PipeWire Output"
+				}
+			'';
 		};
 
 		# displayManager = {

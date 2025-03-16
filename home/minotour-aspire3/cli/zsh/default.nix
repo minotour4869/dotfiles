@@ -1,7 +1,5 @@
 { pkgs, ... }:
-{
-    
-	
+{	
 	home.file.".config/zsh" = {
 		source = ./dots;
 		recursive = true;
