@@ -8,9 +8,10 @@ in
 {
 	imports = [
 		./hyprland
-		inputs.nixcord.homeManagerModules.nixcord
-		./nixcord
+		# inputs.nixcord.homeManagerModules.nixcord
+		# ./nixcord
 		# inputs.mediaplayer.packages.${system}.default
+		./vencord
 		./waybar
 	];
 
