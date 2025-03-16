@@ -3,7 +3,6 @@
 	home.packages = with pkgs; [
 		spotifyd
 		spotify-player
-	programs.spotify-tui.enable = true;
 		pass
 		pinentry gnupg1
 	];
