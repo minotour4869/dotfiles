@@ -1,5 +1,5 @@
 {
-	"reload_style_on_change": true, // debug purpose
+	// "reload_style_on_change": true, // debug purpose
 	"layer": "top",
 	"spacing": 4,
 	"exclusive": true,
@@ -15,6 +15,7 @@
 	],
 	"modules-right": [
 		"tray",
+		"custom/sep",
 		"wireplumber",
 		"network",
 		"battery",
@@ -59,8 +60,12 @@
         },
 	},
 	"tray": {
-		"icon-size": 12,
+		"icon-size": 16,
 		"spacing": 5,
+	},
+	"custom/sep": {
+		"format": "|",
+		"tooltip": false,
 	},
 	"mpris": {
 		// "interval": 1,
@@ -72,7 +77,9 @@
 			"playing": "▶",
 			"paused": "⏸",
 		},
-		"format": "{player_icon} {status_icon} {artist} - {title}",
+		// "format": "{player_icon} {status_icon} {artist} - {title}",
+		"format-playing": "<span font-family=\"Font Awesome 6 Free\">{player_icon} </span> {artist} - {title}",
+		"format-paused": "<span font-family=\"Font Awesome 6 Free\">{status_icon} </span> {artist} - {title}",
 		"format-stopped": "",
 		"tooltip-format": "{dynamic}",
 		"format-stopped": "",
@@ -81,6 +88,7 @@
 	"wireplumber": {
 		"format": "{icon}",
 		"format-muted": "",
+		"tooltip-format": "Volume: {volume}%",
 		"on-click": "pavucontrol",
 		"format-icons": ["", "", ""]
 	},

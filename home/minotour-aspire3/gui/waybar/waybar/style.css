@@ -1,5 +1,5 @@
 * {
-    font-family: "Nunito", "Font Awesome 6 Free";
+    font-family: "Nunito", "Font Awesome 6 Free", sans-serif;
     font-size: 12px;
     min-height: 0;
 }
@@ -43,6 +43,11 @@ tooltip {
 	padding: 0 0.5em;
 }
 
+#workspaces {
+	font-weight: bold;
+	font-size: 12px;
+}
+
 #workspaces button {
 	padding: 0 0.25em;
 }
@@ -68,21 +73,18 @@ tooltip {
 
 #mpris {
 	padding: 0 0.5em;
-	/* font-weight: bold; */
+	font-weight: bold;
 	font-size: 14px;
 }
 
-#custom-reboot,
-#custom-lock {
-	padding-right: 4px;
-}
+/* #battery.charging { */
+/* 	color: green; */
+/* } */
 
-#custom-reboot {
-	font-size: 16px;
-}
-
-#battery.charging {
-	color: green;
+#battery,
+#network, 
+#wireplumber {
+	font-size: 14px;
 }
 
 #battery.warning {
@@ -90,9 +92,5 @@ tooltip {
 }
 
 #battery.critical {
-	color: red;
-}
-
-#power {
 	color: red;
 }

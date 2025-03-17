@@ -28,6 +28,11 @@
 			'';
 		};
 
+		cloudflared = {
+			enable = true;
+			package = pkgs.cloudflared;
+		};
+
 		# displayManager = {
 		# 	# defaultSession = "hyprland";
 		# 	sddm = {

@@ -6,7 +6,7 @@
 			EDITOR = "nvim";
 		};
 		systemPackages = with pkgs; [
-			nurl zoxide home-manager nixfmt-rfc-style nixd nil
+			killall nurl zoxide home-manager nixfmt-rfc-style nixd nil cloudflared
 		];
 	};
 

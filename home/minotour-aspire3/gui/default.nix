@@ -10,6 +10,7 @@ in
 		# ./hyprland
 		./hyprland
 		./rofi
+		./kitty
 		inputs.nixcord.homeManagerModules.nixcord
 		./nixcord
 		# inputs.mediaplayer.packages.${system}.default

@@ -20,6 +20,7 @@
 			'';	
 			shellAliases = {
 				rebuild = "home-manager switch --flake $HOME/.config/nixos#minotour@aspire3 --fast";
+				ssh = "kitten ssh";
 			};
 		};
 		zoxide = {

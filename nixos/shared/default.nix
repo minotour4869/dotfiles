@@ -24,7 +24,7 @@
 
 	fonts = {
 		packages = with pkgs; [
-			nerd-fonts.caskaydia-cove
+			nerd-fonts.code-new-roman
 			roboto
 			
 			font-awesome
@@ -41,13 +41,15 @@
 	time.hardwareClockInLocalTime = true;
 	
 	# using ibus, set locales, etc.
-	i18n = {
-		defaultLocale = "en_US.UTF-8";
-		inputMethod = {
-			enable = true;
-			type = "ibus";
-			ibus.engines = with pkgs.ibus-engines; [
-				bamboo
+	# ibus sucks ass, changing to fcitx5
+	i18n.inputMethod = {
+		enable = true;
+		type = "fcitx5";
+		fcitx5 = {
+			waylandFrontend = true;
+			addons = with pkgs; [
+				fcitx5-bamboo
+				fcitx5-material-color
 			];
 		};
 	};
@@ -55,8 +57,8 @@
 	networking = {
 		firewall = {
 			enable = true;
-			allowedTCPPorts = [ 443 80 ];
-			allowedUDPPorts = [ 443 80 44857 ];
+			allowedTCPPorts = [ 443 80 57621 ];
+			allowedUDPPorts = [ 443 80 44857 5353 ];
 		};
 		networkmanager.enable = true;
 	};
