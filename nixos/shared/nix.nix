@@ -1,6 +1,9 @@
-{stateVersion, ...}:
+{ inputs, stateVersion, ... }:
 {
 	nix = {
+		nixPath = [
+			"nixpkgs=${inputs.nixpkgs}"
+		];
 		settings = {
 			auto-optimise-store = true;
 			trusted-users = [ "root" "@wheel" ];

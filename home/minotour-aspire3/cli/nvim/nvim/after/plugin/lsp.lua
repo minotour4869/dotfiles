@@ -47,4 +47,21 @@ require('mason-lspconfig').setup_handlers({
 			}
 		}
 	end,
+
+	['nixpkgs-fmt'] = function()
+		require('lspconfig').'nixpkgs-fmt'.setup {
+			on_attach = on_attach,
+			capabilities = capabilities,
+			settings = {
+				nixd = {
+					nixpkgs = {
+						expr = "import <nixpkgs> {  }",
+					},
+					formatting = {
+						command = "nixfmt",
+					},
+				}
+			}
+		}
+	end,
 })

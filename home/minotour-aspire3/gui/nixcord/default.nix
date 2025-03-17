@@ -4,9 +4,8 @@
 		discord = {
 			enable = true;
 			vencord.enable = true;
-			# openASAR.enable = true;
+			openASAR.enable = false;
 		};
-		vesktop.enable = false;
 		config = {
 			themeLinks = [
 				"https://luckfire.github.io/amoled-cord/src/support/betterdiscord/compiled.css"

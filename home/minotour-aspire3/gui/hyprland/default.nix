@@ -1,11 +1,8 @@
-{ pkgs, ... }:
+{ pkgs, lib, inputs, ... }:
 {
-	home.packages = with pkgs; [
-		rofi-wayland kitty hyprland hyprpaper hyprshot
+	imports = [
+		inputs.hyprland-nix.homeManagerModules.default
 	];
 
-	home.file.".config/hypr" = {
-		source = ./hypr;
-		recursive = true;
-	};
+	
 }

@@ -6,7 +6,7 @@
 			EDITOR = "nvim";
 		};
 		systemPackages = with pkgs; [
-			nurl zoxide home-manager
+			nurl zoxide home-manager nixfmt-rfc-style nixd
 		];
 	};
 
@@ -42,6 +42,13 @@
 
 				np = "nix profile";
 				hm = "home-manager";
+			};
+		};
+		uwsm = {
+			enable = true;
+			waylandCompositors.hyprland = {
+				prettyName = "Hyprland";
+				binPath = "/run/current-system/sw/bin/Hyprland";
 			};
 		};
 	};

@@ -17,6 +17,18 @@
 		};
 		zen-browser.url = "github:0xc000022070/zen-browser-flake";
 		nixcord.url = "github:kaylorben/nixcord";
+
+		hyprland-git.url = "github:hyprwm/hyprland/main";
+        hyprland-xdph-git.url = "github:hyprwm/xdg-desktop-portal-hyprland";
+        hyprland-protocols-git.url = "github:hyprwm/xdg-desktop-portal-hyprland";
+		hyprland-nix = {
+			url = "github:spikespaz/hyprland-nix";
+			inputs = {
+				hyprland.follows = "hyprland-git";
+				hyprland-xdph.follows = "hyprland-xdph-git";
+				hyprland-protocols.follows = "hyprland-protocols-git";
+			};
+		};
 	};
 
 	outputs = inputs: 
