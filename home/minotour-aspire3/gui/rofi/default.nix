@@ -8,6 +8,6 @@
 
 	programs.rofi = {
 		enable = true;
-		theme = ./theme.rasi;
+		theme = ./rofi/theme.rasi;
 	};
 }
