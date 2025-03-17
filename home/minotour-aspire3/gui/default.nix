@@ -17,6 +17,7 @@ in
 		# ./vencord
 		./waybar
 		./spotify
+		./swaylock
 	];
 
 	home = {
