@@ -7,7 +7,7 @@
 
 	programs.git = {
 		extraConfig.credential = {
-			helper = "oauth";
+			helper = "manager";
 			"https://github.com".username = "minotour4869";
 			credentialStore = "cache";
 		};

@@ -8,16 +8,10 @@
 		    inputs.nixpkgs.follows = "nixpkgs";
 		};
 		nur = {
-      		    url = "github:nix-community/NUR";
-      		    inputs.nixpkgs.follows = "nixpkgs";
-    		};
-		mediaplayer = {
-			url = "github:nomisreual/mediaplayer";
-			inputs.nixpkgs.follows = "nixpkgs";
-		};
-		zen-browser.url = "github:0xc000022070/zen-browser-flake";
+      		url = "github:nix-community/NUR";
+      		inputs.nixpkgs.follows = "nixpkgs";
+    	};
 		nixcord.url = "github:kaylorben/nixcord";
-
 		hyprland.url = "github:hyprwm/hyprland";
 	};
 

@@ -20,7 +20,7 @@ in
 			display = {
 				separator = " ";
 				constants = [
-					"──────────────────────────────────────"
+					"───────────────────────────────────────"
 				];
 			};
 			modules = [
@@ -47,12 +47,13 @@ in
 					type = "cpu";
 					key = "󰍛";
 					keyColor = "${cl_k}";
-					format = "{name} ({cores-logical}) {freq-max}";
+					format = "{name} {freq-max}";
 				}
 				{
 					type = "gpu";
 					key = "󰾲";
 					keyColor = "${cl_k}";
+					format = "{1} {2}";
 				}
 				{
 					type = "display";
@@ -73,12 +74,12 @@ in
 				{
 					type = "custom";
 					outputColor = "${cl_k}";
-					format = ''╰──────────────────────────────────────╯'';
+					format = ''╰{$1}╯'';
 				}
 				{
 					type = "custom";
 					outputColor = "${cl_yuki}";
-					format = ''╭──────────────────────────────────────╮'';
+					format = ''╭{$1}╮'';
 				}
 				{
 					type = "os";
@@ -103,12 +104,12 @@ in
 				{
 					type = "custom";
 					outputColor = "${cl_yuki}";
-					format = ''╰──────────────────────────────────────╯'';
+					format = ''╰{$1}╯'';
 				}
 				{
 					type = "custom";
 					outputColor = "${cl_amia}";
-					format = ''╭──────────────────────────────────────╮'';
+					format = ''╭{$1}╮'';
 				}
 				{
 					type = "terminal";
@@ -123,8 +124,9 @@ in
 				{
 					type = "custom";
 					outputColor = "${cl_amia}";
-					format = ''╰──────────────────────────────────────╯'';
+					format = ''╰{$1}╯'';
 				}
+				"colors"
 			];
 		};	
     };
