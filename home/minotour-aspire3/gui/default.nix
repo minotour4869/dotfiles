@@ -15,6 +15,7 @@ in
 		# inputs.mediaplayer.packages.${system}.default
 		# ./vencord
 		./waybar
+		./spotify
 	];
 
 	home = {
