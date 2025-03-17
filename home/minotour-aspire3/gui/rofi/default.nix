@@ -1,9 +1,7 @@
 {
-	home = {
-		file.".config/rofi" = {
-			source = ./rofi;
-			recursive = true;
-		};
+	home.file.".config/rofi" = {
+		source = ./rofi;
+		recursive = true;
 	};
 
 	programs.rofi = {

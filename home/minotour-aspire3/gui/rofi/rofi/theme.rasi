@@ -21,10 +21,9 @@ configuration {
 
 /*****----- Global Properties -----*****/
 @import                          "colors.rasi"
+@import							 "fonts.rasi"
 
 * {
-	font: "Nunito 12";
-
     border-colour:               var(selected);
     handle-colour:               var(selected);
     background-colour:           var(background);
