@@ -8,7 +8,8 @@ in
 {
 	imports = [
 		# ./hyprland
-		./hyprland-backup
+		./hyprland
+		./rofi
 		inputs.nixcord.homeManagerModules.nixcord
 		./nixcord
 		# inputs.mediaplayer.packages.${system}.default

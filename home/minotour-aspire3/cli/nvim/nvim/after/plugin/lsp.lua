@@ -48,19 +48,14 @@ require('mason-lspconfig').setup_handlers({
 		}
 	end,
 
-	['nixpkgs-fmt'] = function()
-		require('lspconfig').'nixpkgs-fmt'.setup {
+	['nil_ls'] = function()
+		require('lspconfig').nil_ls.setup {
 			on_attach = on_attach,
 			capabilities = capabilities,
 			settings = {
-				nixd = {
-					nixpkgs = {
-						expr = "import <nixpkgs> {  }",
-					},
-					formatting = {
-						command = "nixfmt",
-					},
-				}
+				cmd = { "nil" },
+				filetypes = { "nix" },
+				single_file_support = true,
 			}
 		}
 	end,

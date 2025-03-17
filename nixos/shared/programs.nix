@@ -1,4 +1,4 @@
-{lib, pkgs, ...}:
+{ pkgs, ... }:
 {
 	environment = {
 		variables = {
@@ -6,11 +6,15 @@
 			EDITOR = "nvim";
 		};
 		systemPackages = with pkgs; [
-			nurl zoxide home-manager nixfmt-rfc-style nixd
+			nurl zoxide home-manager nixfmt-rfc-style nixd nil
 		];
 	};
 
 	programs = {
+		hyprland = {
+			enable = true;
+			xwayland.enable = true;
+		};
         dconf.enable = true;
 		adb.enable = true;
 		git = {

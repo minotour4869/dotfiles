@@ -18,7 +18,6 @@
 		"wireplumber",
 		"network",
 		"battery",
-		// "group/powers",
 	],
 	"hyprland/workspaces": {
 		"format": "{icon}",
