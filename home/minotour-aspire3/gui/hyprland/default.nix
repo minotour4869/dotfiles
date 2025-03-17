@@ -1,7 +1,7 @@
 { pkgs, ... }:
 {
 	home.packages = with pkgs; [
-		rofi-wayland kitty hyprland hyprpaper hyprshot
+		kitty hyprland hyprpaper hyprshot
 	];
 
 	# programs.hyprland.withUWSM = true;
@@ -15,5 +15,11 @@
 		enable = true;
 		systemd.enable = true;
 		xwayland.enable = true;
+		extraConfig = ''
+			source = ./general.conf
+			source = ./startup.conf
+			source = ./workspaces.conf
+			source = ./keybinds.conf
+		'';
 	};
 }
