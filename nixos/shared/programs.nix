@@ -7,7 +7,6 @@
 		};
 		systemPackages = with pkgs; [
 			killall nurl zoxide home-manager nixfmt-rfc-style nixd nil cloudflared haskellPackages.alsa-mixer
-			python
 		];
 	};
 

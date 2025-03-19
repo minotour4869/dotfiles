@@ -1,0 +1,30 @@
+#!/bin/sh
+swaylock \
+	--screenshots --clock --indicator-idle-visible \
+	--fade-in 0.1 \
+	--disable-caps-lock-text \
+	--timestr "%H:%M" \
+	--indicator-radius 75 \
+	--indicator-thickness 7 \
+	--line-color				00000000 \
+	--line-caps-lock-color		a3896f	 \
+	--line-clear-color			00000000 \
+	--line-ver-color			00000000 \
+	--line-wrong-color			00000000 \
+	--separator-color			00000000 \
+	--ring-color				455a64	 \
+	--ring-ver-color			8889cc	 \
+	--ring-wrong-color			ff0000	 \
+	--key-hl-color				ccaa87	 \
+	--caps-lock-key-hl-color    635343	 \
+	--text-color				ffffffff \
+	--bs-hl-color				e4a8ca	 \
+	--inside-color				00000088 \
+	--inside-clear-color		00000088 \
+	--inside-ver-color			00000088 \
+	--inside-wrong-color		00000088 \
+	--text-clear				""		 \
+	--text-ver					""		 \
+	--text-wrong				""		 \
+	--effect-scale 0.5 --effect-blur 7x3 \
+	--effect-scale 2 --effect-vignette 0.5:0.5 \

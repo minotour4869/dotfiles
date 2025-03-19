@@ -8,6 +8,7 @@ in
 {
 	imports = [
 		# ./hyprland
+		./swaylock
 		./hyprland
 		./rofi
 		./kitty
@@ -17,7 +18,6 @@ in
 		# ./vencord
 		./waybar
 		./spotify
-		# ./swaylock
 	];
 
 	home = {
