@@ -1,5 +1,11 @@
 { pkgs, ... }:
 {	
+	# misc packages for cli things
+	home.packages = with pkgs; [
+		cava 
+		cmatrix
+	];
+
 	home.file.".config/zsh" = {
 		source = ./dots;
 		recursive = true;
