@@ -32,6 +32,8 @@
 				noTypingAnimation.enable = true;
 				shikiCodeblocks.enable = true;
 				showMeYourName.enable = true;
+				spotifyCrack.enable = true;
+				spotifyControls.enable = true;
 				typingTweaks.enable = true;
 				whoReacted.enable = true;
 			};

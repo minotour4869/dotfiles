@@ -6,7 +6,8 @@
 			EDITOR = "nvim";
 		};
 		systemPackages = with pkgs; [
-			killall nurl zoxide home-manager nixfmt-rfc-style nixd nil cloudflared
+			killall nurl zoxide home-manager nixfmt-rfc-style nixd nil cloudflared haskellPackages.alsa-mixer
+			python
 		];
 	};
 

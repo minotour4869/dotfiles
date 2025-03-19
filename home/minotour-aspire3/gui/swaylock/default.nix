@@ -1,11 +1,11 @@
 { pkgs, ... }:
 {
-	home.packages = with pkgs; [
-		swaylock-effects
-	];
-
 	programs.swaylock = {
 		enable = true;
-		package = pkgs.swaylock-effects;
+		package = pkgs.swaylock;
+	};
+
+	security.pam.services.swaylock = {
+		enable = true;
 	};
 }

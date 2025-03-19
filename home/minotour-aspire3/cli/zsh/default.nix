@@ -13,13 +13,12 @@
 			enableCompletion = true;
 			autosuggestion.enable = true;
 			syntaxHighlighting.enable = true;	
-			# enableLsColors = true;
 
 			initExtra = ''
 				source $HOME/.config/zsh/prompt.zsh
 			'';	
 			shellAliases = {
-				rebuild = "home-manager switch --flake $HOME/.config/nixos#minotour@aspire3 --fast";
+				rebuild = "home-manager switch --flake $HOME/.config/nixos#minotour@aspire3";
 				ssh = "kitten ssh";
 			};
 		};
