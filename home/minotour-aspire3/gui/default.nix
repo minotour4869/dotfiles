@@ -7,15 +7,11 @@ let
 in
 {
 	imports = [
-		# ./hyprland
 		./swaylock
 		./hyprland
 		./rofi
 		./kitty
-		inputs.nixcord.homeManagerModules.nixcord
 		./nixcord
-		# inputs.mediaplayer.packages.${system}.default
-		# ./vencord
 		./waybar
 		./spotify
 	];
