@@ -4,13 +4,16 @@
     ./keybinds.nix
   ];
   vim = {
-    viAlias.enable = true;
-    vimAlias.enable = true;
+    viAlias = true;
+    vimAlias = true;
     options = {
       tabstop = 4;
       shiftwidth = 4;
       autoindent = true;
       cursorlineopt = "number";
     };
+    luaConfigPost = ''
+      vim.cmd 'colorscheme material'
+    '';
   };
 }
