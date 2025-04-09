@@ -25,5 +25,12 @@
       silent = true;
       action = "<C-w>l";
     }
+    {
+      key = "<F3>";
+      mode = "i";
+      silent = true;
+      action = ":pu=strftime('%x %X')";
+    }
+        
   ];
 }

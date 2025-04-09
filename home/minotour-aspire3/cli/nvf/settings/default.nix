@@ -2,6 +2,7 @@
   imports = [
     ./plugins
     ./keybinds.nix
+    # ./autocmd.nix
   ];
   vim = {
     viAlias = true;

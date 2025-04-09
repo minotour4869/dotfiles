@@ -25,8 +25,13 @@ parse_git_branch() {
 
     echo "$branch"
 }
+
+virenv() {
+    [ $VIRTUAL_ENV ] && echo '%F{#8889CC}'`basename $VIRTUAL_ENV`'%f '
+}
+
 update_prompt() {    
-    PS1="%F{#CCAA87}%n@%m%f %F{blue}%~%f $(parse_git_branch) "$'\n'"%(?.%F{green}%B>%b.%F{red}>) %f"
+    PS1="%F{#CCAA87}%n@%m%f %F{blue}%~%f $(virenv)$(parse_git_branch) "$'\n'"%(?.%F{green}%B>%b.%F{red}>) %f"
     RPS1='%(?..%F{red}[%?]%f) %F{239}%t%f'
 }
 

@@ -5,7 +5,7 @@
             left = "";
             right = "";
         };
-        activeSession = {
+        activeSection = {
             a = [
                 ''
                     { "mode", separator = { left = '' }, right_padding = 2 }
@@ -39,7 +39,7 @@
                 ''
             ];
         };
-        inactiveSession = {
+        inactiveSection = {
             a = [
                 ''
                     "filename"
