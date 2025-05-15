@@ -11,12 +11,13 @@
 			vencord.enable = true;
 			openASAR.enable = false;
 		};
+        quickCss = builtins.readFile ./quickCss.css;
 		config = {
 			themeLinks = [
 				"https://luckfire.github.io/amoled-cord/src/support/betterdiscord/compiled.css"
 				"https://raw.githubusercontent.com/DiscordStyles/RadialStatus/deploy/RadialStatus.theme.css"
 			];
-            useQuickCss = builtins.readFile ./quickCss.css;
+            useQuickCss = true;
 			frameless = true;
 			transparent = true;
 			plugins = {
