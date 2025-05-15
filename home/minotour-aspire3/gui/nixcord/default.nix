@@ -16,6 +16,7 @@
 				"https://luckfire.github.io/amoled-cord/src/support/betterdiscord/compiled.css"
 				"https://raw.githubusercontent.com/DiscordStyles/RadialStatus/deploy/RadialStatus.theme.css"
 			];
+            useQuickCss = builtins.readFile ./quickCss.css;
 			frameless = true;
 			transparent = true;
 			plugins = {
