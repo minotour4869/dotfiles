@@ -38,7 +38,10 @@
 				noF1.enable = true;
 				noTypingAnimation.enable = true;
 				shikiCodeblocks.enable = true;
-				showMeYourName.enable = true;
+				showMeYourName = {
+                    enable = true;
+                    mode = "nick-user";
+                };
 				spotifyCrack.enable = true;
 				spotifyControls.enable = true;
 				typingTweaks.enable = true;
