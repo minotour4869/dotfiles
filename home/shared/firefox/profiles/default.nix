@@ -22,10 +22,10 @@ in {
 
     search = {
         force = true;
-        default = "Google";
+        default = "google";
         engines = {
-            "Bing".metaData.hidden = true;
-            "Google".metaData.alias = "@g";
+            "bing".metaData.hidden = true;
+            "google".metaData.alias = "@g";
             "Nix Packages" = {
                 definedAliases = ["@np"];
                 urls = [
@@ -40,7 +40,7 @@ in {
                 ];
             };
 
-            "Youtube" = {
+            "youtube" = {
                 definedAliases = ["@yt"];
                 urls = [
                 {

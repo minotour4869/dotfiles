@@ -6,12 +6,11 @@
   home.packages = with pkgs; [
     fzf
     gcc gdb
-    nodejs_23
+    nodejs_24
     yarn
     wl-clipboard
     cargo
-    eslint_d
-    
+    eslint_d 
   ];
   imports = [
     inputs.nvf.homeManagerModules.default

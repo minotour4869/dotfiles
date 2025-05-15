@@ -20,7 +20,7 @@
 			autosuggestion.enable = true;
 			syntaxHighlighting.enable = true;	
 
-			initExtra = ''
+			initContent = ''
 				source $HOME/.config/zsh/prompt.zsh
 			'';	
 			shellAliases = {
