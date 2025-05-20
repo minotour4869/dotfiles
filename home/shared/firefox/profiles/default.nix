@@ -14,7 +14,7 @@ in {
 	"toolkit.legacyUserProfileCustomizations.stylesheets" = true;
 	"sidebar.revamp" = true;
 	"sidebar.verticalTabs" = true;
-	"sidebar.visibility" = "always-show";
+	"sidebar.visibility" = "expand-on-hover";
   };
 
     userChrome = '' '';
