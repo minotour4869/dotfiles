@@ -33,6 +33,8 @@
 			package = pkgs.cloudflared;
 		};
 
+        libinput.touchpad.naturalScrolling = true;
+
 		# displayManager = {
 		# 	# defaultSession = "hyprland";
 		# 	sddm = {
