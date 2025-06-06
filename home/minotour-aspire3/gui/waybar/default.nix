@@ -2,6 +2,7 @@
 {
 	home.packages = with pkgs; [
 		playerctl
+        texlivePackages.nunito
 	];
 
 	programs.waybar = {
@@ -14,4 +15,9 @@
 		source = ./waybar;
 		recursive = true;
 	};
+
+    home.file.".local/share/fonts" = {
+        source = ./fonts;
+        recursive = true;
+    };
 }
