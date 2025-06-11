@@ -8,6 +8,7 @@ in
 {
 	imports = [
 		./swaylock
+        ./obs
 		./hyprland
 		./rofi
 		./kitty

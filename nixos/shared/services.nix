@@ -1,8 +1,8 @@
 { pkgs, ... }:
 {
-	# environment.systemPackages = [
-	# 	pkgs.pavucontrol
-	# ];
+	environment.systemPackages = [
+		pkgs.pavucontrol
+	];
 	services = {
 		dbus.enable = true;
 		openssh.enable = true;
@@ -10,10 +10,11 @@
 		pipewire = {
 			enable = true;
 			audio.enable = true;
-			alsa.enable = true;
+			alsa.enable = false;
 			alsa.support32Bit = true;
 
 			pulse.enable = true;
+            jack.enable = false;
 			wireplumber.enable = true;
 		};
 
