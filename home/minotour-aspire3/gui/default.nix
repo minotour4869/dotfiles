@@ -15,6 +15,7 @@ in
 		./nixcord
 		./waybar
 		./spotify
+        ./gimp
 	];
 
 	home = {
