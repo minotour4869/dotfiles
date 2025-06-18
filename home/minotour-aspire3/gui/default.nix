@@ -9,6 +9,7 @@ in
 	imports = [
 		./swaylock
         ./obs
+        ./vlc
 		./hyprland
 		./rofi
 		./kitty

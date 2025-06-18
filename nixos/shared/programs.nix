@@ -55,5 +55,11 @@
 				binPath = "/run/current-system/sw/bin/Hyprland";
 			};
 		};
+        steam = {
+            enable = true;
+            remotePlay.openFirewall = true;
+            dedicatedServer.openFirewall = true;
+            localNetworkGameTransfers.openFirewall = true;
+        };
 	};
 }
