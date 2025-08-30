@@ -1,14 +1,17 @@
-{ inputs, ... }:
+{ inputs, pkgs, ... }:
 {
 	imports = [
 		inputs.nixcord.homeModules.nixcord
-	];	
+	];
 
 	programs.nixcord = {
 		enable = true;
 		discord = {
 			enable = true;
-			vencord.enable = true;
+			vencord = {
+                enable = true;
+                package = pkgs.vencord;
+            };
 			openASAR.enable = false;
 		};
         quickCss = builtins.readFile ./quickCss.css;
