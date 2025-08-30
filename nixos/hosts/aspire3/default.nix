@@ -11,6 +11,13 @@ in
 {
 	imports = [ ./hardware-configuration.nix ];
 
+    environment.systemPackages = [
+        nvidia-offload
+        pkgs.cudatoolkit
+        pkgs.linuxKernel.packages.linux_zen.xone
+    ];
+    services.xserver.videoDrivers = ["nvidia"];
+
 	hardware = {
 		bluetooth = {
 			enable = true;
@@ -21,7 +28,9 @@ in
 			enable32Bit = true;
 		};
         nvidia = {
+            modesetting.enable = true;
             nvidiaSettings = true;
+            open = false;
             prime = {
                 offload = {
                     enable = true;
@@ -31,10 +40,11 @@ in
                 nvidiaBusId = "PCI:2:0:0";
             };
         };
+        xone.enable = true;
+        xpad-noone.enable = true;
 		# alsa.enable = true;
 	};
 
-    environment.systemPackages = [ nvidia-offload ];
 
 	services = {
 		upower.enable = true;

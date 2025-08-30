@@ -43,9 +43,9 @@
 			shellAliases = {
 				mv = "mv -iv";
 				cp = "cp -riv";
+                sudo = "nocorrect sudo ";
 
-				np = "nix profile";
-				hm = "home-manager";
+                rebuild-host = "nixos-rebuild switch --flake $HOME/.config/nixos#aspire3"; 
 			};
 		};
 		uwsm = {

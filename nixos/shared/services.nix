@@ -10,7 +10,7 @@
 		pipewire = {
 			enable = true;
 			audio.enable = true;
-			alsa.enable = false;
+			alsa.enable = true;
 			alsa.support32Bit = true;
 
 			pulse.enable = true;
@@ -35,6 +35,21 @@
 		};
 
         libinput.touchpad.naturalScrolling = true;
+
+        thermald.enable = true;
+        auto-cpufreq = {
+            enable = true;
+            settings = {
+                battery = {
+                    governor = "powersave";
+                    turbo = "never";
+                };
+                charge = {
+                    governor = "performance";
+                    turbo = "never";
+                };
+            };
+        };
 
 		# displayManager = {
 		# 	# defaultSession = "hyprland";

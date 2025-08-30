@@ -24,7 +24,7 @@
 				source $HOME/.config/zsh/prompt.zsh
 			'';	
 			shellAliases = {
-				rebuild = "home-manager switch --flake $HOME/.config/nixos#minotour@aspire3";
+				rebuild-home = "home-manager switch --flake $HOME/.config/nixos#minotour@aspire3 -b backup";
 				ssh = "kitten ssh";
 			};
 		};

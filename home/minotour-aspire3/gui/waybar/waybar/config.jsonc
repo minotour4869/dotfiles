@@ -14,6 +14,8 @@
 		"clock"
 	],
 	"modules-right": [
+        "cpu",
+        "custom/sep",
 		"tray",
 		"custom/sep",
 		"wireplumber",
@@ -72,6 +74,7 @@
 		"player-icons": {
 			"firefox": "",
 			"spotify": "",
+            "spotifyd": "",
 		},
 		"status-icons": {
 			"playing": "▶",
@@ -109,11 +112,20 @@
 			"critical": 10,
 		},
 		"format": "{icon}",
-		"format-icons": ["", "", "", "", ""],
+        "format-charging": "󰂄",
+		// "format-icons": ["", "", "", "", ""],
+        "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
 		"format-time": "{H}h {M}min left",
 		"tooltip-format": "{capacity}% ({time})",
 		"tooltip-format-charging": "{capacity}% (charging)",
 	},
+    "cpu": {
+        "interval": 10,
+        "format": "",
+        "max-length": 10,
+        "tooltip": true,
+        "tooltip-format": "{avg_frequency}Mhz"
+    },
 	"group/powers": {
 		"orientation": "inherit",
 		"drawer": {

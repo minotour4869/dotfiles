@@ -87,6 +87,10 @@ tooltip {
 	font-size: 14px;
 }
 
+#battery {
+    font-family: "CodeNewRoman Nerd Font Mono";
+}
+
 #battery.warning {
 	color: yellow;
 }

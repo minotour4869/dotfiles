@@ -69,5 +69,11 @@
 		pam.services = {
 			swaylock = {};
 		};
+        sudo = {
+            enable = true;
+            extraConfig = ''
+                Defaults pwfeedback,insults
+            '';
+        };
 	};	
 }

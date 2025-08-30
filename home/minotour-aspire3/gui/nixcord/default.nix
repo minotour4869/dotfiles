@@ -13,6 +13,8 @@
 		};
         quickCss = builtins.readFile ./quickCss.css;
 		config = {
+            autoUpdate = true;
+            autoUpdateNotification = true;
 			themeLinks = [
 				"https://luckfire.github.io/amoled-cord/src/support/betterdiscord/compiled.css"
 				"https://raw.githubusercontent.com/DiscordStyles/RadialStatus/deploy/RadialStatus.theme.css"

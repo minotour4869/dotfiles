@@ -6,6 +6,10 @@ in
 	# groups = {};
 
 	users.users = {
+        root = {
+            isSystemUser = true;
+            shell = pkgs.zsh;
+        };
 		minotour = {
 			isNormalUser = true;
 			shell = pkgs.zsh;
