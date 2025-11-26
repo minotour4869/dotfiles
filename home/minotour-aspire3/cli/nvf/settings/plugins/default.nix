@@ -1,7 +1,6 @@
 {
   imports = [
     ./autopairs.nix
-    ./assistant.nix
     ./autocomplete.nix
     ./binds.nix
     ./dashboard.nix
