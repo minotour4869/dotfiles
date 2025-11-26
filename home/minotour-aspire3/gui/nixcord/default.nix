@@ -46,6 +46,8 @@
 				spotifyCrack.enable = true;
 				spotifyControls.enable = true;
 				typingTweaks.enable = true;
+                validUser.enable = true;
+                validReply.enable = true;
 				whoReacted.enable = true;
 			};
 		};
