@@ -9,6 +9,7 @@
         discord = {
             enable = true;
             vencord.enable = true;
+            openASAR.enable = false;
         };
         quickCss = builtins.readFile ./quickCss.css;
 		config = {
@@ -40,7 +41,7 @@
 				shikiCodeblocks.enable = true;
 				showMeYourName = {
                     enable = true;
-                    includedNames = "{friend, nick} (@{user})";
+                    includedNames = "{nick, display} (@{user})";
                 };
 				spotifyCrack.enable = true;
 				spotifyControls.enable = true;
