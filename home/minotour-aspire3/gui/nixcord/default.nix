@@ -6,7 +6,10 @@
 
 	programs.nixcord = {
 		enable = true;
-        equibop.enable = true;
+        discord = {
+            enable = true;
+            vencord.enable = true;
+        };
         quickCss = builtins.readFile ./quickCss.css;
 		config = {
 			themeLinks = [
@@ -37,7 +40,6 @@
 				shikiCodeblocks.enable = true;
 				showMeYourName = {
                     enable = true;
-                    mode = "nick-user";
                 };
 				spotifyCrack.enable = true;
 				spotifyControls.enable = true;
