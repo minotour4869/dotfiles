@@ -6,13 +6,7 @@
 
 	programs.nixcord = {
 		enable = true;
-
-		discord = {
-			enable = true;
-            vencord.enable = false;
-            equibop.enable = true;
-			openASAR.enable = false;
-		};
+        vencord.enable = true;
         quickCss = builtins.readFile ./quickCss.css;
 		config = {
 			themeLinks = [
