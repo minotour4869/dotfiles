@@ -6,7 +6,6 @@
 
 	programs.nixcord = {
 		enable = true;
-        autoUpdateNotification = true;
 
 		discord = {
 			enable = true;
@@ -21,6 +20,7 @@
 				"https://luckfire.github.io/amoled-cord/src/support/betterdiscord/compiled.css"
 				"https://raw.githubusercontent.com/DiscordStyles/RadialStatus/deploy/RadialStatus.theme.css"
 			];
+            autoUpdateNotification = true;
             useQuickCss = true;
 			frameless = true;
 			transparent = true;
