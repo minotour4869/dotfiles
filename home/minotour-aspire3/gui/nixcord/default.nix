@@ -21,9 +21,9 @@
 			frameless = true;
 			transparent = true;
 			plugins = {
-				clearURLs.enable = true;
+				clearUrLs.enable = true;
 				consoleJanitor.enable = true;
-				copyUserURLs.enable = true;
+				copyUserUrLs.enable = true;
 				fixCodeblockGap.enable = true;
 				fixSpotifyEmbeds.enable = true;
 				friendsSince.enable = true;
@@ -40,6 +40,7 @@
 				shikiCodeblocks.enable = true;
 				showMeYourName = {
                     enable = true;
+                    includedNames = "{friend, nick} (@{user})";
                 };
 				spotifyCrack.enable = true;
 				spotifyControls.enable = true;
