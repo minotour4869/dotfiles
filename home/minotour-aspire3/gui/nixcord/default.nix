@@ -14,7 +14,7 @@
             };
 			openASAR.enable = false;
 		};
-        quickCss = builtins.readFile ./quickCss.css;
+        # quickCss = builtins.readFile ./quickCss.css;
 		config = {
 			themeLinks = [
 				"https://luckfire.github.io/amoled-cord/src/support/betterdiscord/compiled.css"
