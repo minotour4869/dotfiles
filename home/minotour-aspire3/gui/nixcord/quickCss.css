@@ -1,89 +1,87 @@
 /* Hide title bar */
 @import url('https://raw.githubusercontent.com/surgedevs/visual-refresh-compact-title-bar/refs/heads/main/browser.css');
-:root {
-    /* controls the vertical position of the window buttons */
-    --vr-header-snippet-top: 0px !important;
-    /* controls the space above the server list */
-    --vr-header-snippet-server-padding: 16px !important;
-    /* controls the space the window buttons get on the channel header, experiment around with this if you get gaps or the buttons overlap! */
-    --vr-header-snippet-space: 230px !important;
-    /* controls the space to the right of the window buttons, good if you are using themes like midnight which add padding to the bar */
-    --vr-header-snippet-button-padding: 0 !important;
-}
-
-.panels_c48ade {
-  left: var(--=space-sm)!important;
-  bottom: var(--=space-sm)!important;
-  width: 54px!important;
-  height: 57px !important;
-  border-radius: 30px!important;
-  display: flex!important;
-  flex-direction: column;
-  overflow: hidden;
-  transition-duration: 0.35s;
-  z-index: 50000;
-  pointer-events: all;
-  border: 1px solid var(--border-subtle)!important;
- &:has(.container_e131a9) {
-  border: 1px solid var(--border-normal);
- }
-}
-
-.wrapper_e131a9 {
-  height: 0;
-  overflow: hidden;
-  
-}
-
-.panels_c48ade:hover {
-  width: 340px!important;
-  height: auto!important;
-  display: flex!important;
-  flex-direction: column;
-  border-radius: 15px!important;
-  filter: drop-shadow(7px 7px 7px rgba(0, 0, 0, 0.123)) ;
+/* Collapsible sidebars */
+.visual-refresh [class^="sidebarList_"] {
+  position: fixed; /* Remove if you don't want it to float */
+  width: 150px; /* Set to 0px if you don't want it to float */
+  container-type: unset;
+  opacity: 0%;
+  height: 100%;
+  z-index: 998;
+  left: -70px;
+  backdrop-filter: blur(0.2rem);
+  transition-property: opacity, left, width;
+  transition-duration: .5s;
   transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
-  .wrapper_e131a9 {
-    height: auto!important;
-  }
 }
-.sidebar_c48ade {
-  overflow: visible!important;
+
+.visual-refresh [class^="sidebar_"]:hover [class^="sidebarList_"] {
+  left: 70px;
+  opacity: 100%;
+  width: 300px; /* Set your preferred width here (resize handle is disabled) */
 }
-.container__2637a {
-  padding-bottom: 0px!important;
+
+.visual-refresh [class*="guilds"] {
+  z-index: 999; /* So the sidebar pops from behind the servers */
 }
-.scroller__99e7c {
-  margin-bottom: 0px!important;
+
+.visual-refresh [class^="panels_"] {
+  position: fixed; /* Floating user panel (status, deafen, etc) */
+  width: 75px;
+  z-index: 999;
+  transition: width .5s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-.bottom__7aaec {
-  bottom: 0px!important;
+
+.visual-refresh [class^="panels_"]:hover {
+  width: 370px;
+  z-index: 9999;
+  left: 0px;
+  backdrop-filter: blur(0.2rem);
+  opacity: 100%;
 }
 
 
 .visual-refresh [class^="panels_"] [class^="container__"] [class^="buttons__"] {
-  opacity: 0;
-  transform: scale(0);
-  transform-origin: left;
-  transition: opacity 0.1s ease-in, transform 0.1s ease-in;
-  will-change: opacity, transform;
+
+  opacity: 0%;
+  scale: 0%; /* Because the buttons can't stay inside the panel on chromium (any help is appreciated) */
+  transition-property: opacity, margin-bottom, scale;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.visual-refresh [class^="panels_"]:hover [class^="container__"] [class^="buttons__"] {
-
-  transform: scale(1);
-  
-  opacity: 1;
+/* Make banners look right */
+.visual-refresh .bannerImage_f37cb1, .visual-refresh .bannerImg_f37cb1 {
+  width: 300px;
 }
 
-.visual-refresh .panel__5dec7 {
-  display: none;
+.visual-refresh .panels__5e434:hover [class^="container__"] [class^="buttons__"] {
+ 
+   scale: 100%;
+   opacity: 100%;
+  transition-property: opacity, margin-bottom, scale;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.visual-refresh [class^="panels_"]:hover .panel__5dec7 {
-  display: block;
+.visual-refresh [class^="sidebarResizeHandle_"] {
+  display: none; /* Set your preferred width in the sidebar settings */
 }
 
-body:has(.panels_c48ade:not(:hover)) #vc-spotify-player {
-  display: none;
+.visual-refresh [class^="container_"] [class^="membersWrap_"] {
+  position: fixed; /* Remove if you don't want it to float */
+  height: 100%;
+  opacity: 0%;
+  z-index: 999;
+  right: -260px;
+/*top: 80px;  /* Add/change this according to your desktop/client */
+  backdrop-filter: blur(0.2rem);
+  transition-property: right, opacity;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.visual-refresh [class^="container_"] [class^="membersWrap_"]:hover {
+  right: 0px;
+  opacity: 100%;
 }

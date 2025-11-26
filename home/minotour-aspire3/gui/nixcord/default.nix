@@ -41,7 +41,7 @@
 				shikiCodeblocks.enable = true;
 				showMeYourName = {
                     enable = true;
-                    includedNames = "{nick, display} (@{user})";
+                    includedNames = "{display} [{nick}] (@{user})";
                 };
 				spotifyCrack.enable = true;
 				spotifyControls.enable = true;
