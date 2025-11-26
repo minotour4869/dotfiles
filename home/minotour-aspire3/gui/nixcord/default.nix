@@ -6,11 +6,12 @@
 
 	programs.nixcord = {
 		enable = true;
+        autoUpdateNotification = true;
+
 		discord = {
 			enable = true;
 			vencord = {
                 enable = true;
-                package = pkgs.vencord;
             };
 			openASAR.enable = false;
 		};
