@@ -13,9 +13,6 @@ in
                     repo = "assistant.nvim";
                 };
             };
-            setup = ''
-                require('assistant.nvim').setup {}
-            '';
         };
     };
 }
