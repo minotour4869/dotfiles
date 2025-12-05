@@ -1,12 +1,12 @@
 { pkgs, ... }:
 let
     inherit (pkgs) fetchFromGitHub;
-    inherit (pkgs.vimUtils) buildVimPlugins;
+    inherit (pkgs.vimUtils) buildVimPlugin;
 in
 {
     vim.extraPlugins = {
         "assistant.nvim" = {
-            package = buildVimPlugins {
+            package = buildVimPlugin {
                 name = "assistant.nvim";
                 src = fetchFromGitHub {
                     owner = "A7Lavinraj";
