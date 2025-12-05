@@ -1,5 +1,6 @@
 {
   imports = [
+    ./assistant.nix
     ./autopairs.nix
     ./autocomplete.nix
     ./binds.nix
