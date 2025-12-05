@@ -1,16 +1,21 @@
 { pkgs, ... }:
+let
+    inherit (pkgs) fetchFromGitHub;
+    inherit (pkgs.vimUtils) buildVimPlugins;
+in
 {
-    vim.startPlugins = [{
-        pname = "assistant.nvim";
-        version = "v4.2.0";
-
-        src = pkgs.fetchFromGitHub {
-            owner = "A7Lavinraj";
-            repo = "assistant.nvim";
+    vim.extraPlugins = {
+        "assistant.nvim" = {
+            package = buildVimPlugins {
+                name = "assistant.nvim";
+                src = fetchFromGitHub {
+                    owner = "A7Lavinraj";
+                    repo = "assistant.nvim";
+                };
+            };
+            setup = ''
+                require('assistant.nvim').setup {}
+            '';
         };
-
-        optional = false;
-
-        dependencies = [];
-    }];
+    };
 }
