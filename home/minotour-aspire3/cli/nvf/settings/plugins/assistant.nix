@@ -1,6 +1,6 @@
 { pkgs, ... }:
 let
-    assistant-nvim = pkgs.vimUtils.buildVimPlugin {
+    assistant-nvim = pkgs.vimUtils.buildNeovimPlugin {
         name = "assistant.nvim";
         src = pkgs.fetchFromGitHub {
             owner = "A7Lavinraj";
