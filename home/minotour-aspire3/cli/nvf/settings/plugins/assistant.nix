@@ -12,7 +12,7 @@ let
 in
 {
     vim.lazy.plugins = {
-        "assistant.nvim" = {
+        "vimplugin-assistant.nvim" = {
             package = assistant-nvim;
             lazy = false;
             keys = [
