@@ -1,20 +1,26 @@
 { pkgs, ... }:
 let
-    inherit (pkgs) fetchFromGitHub;
-    inherit (pkgs.vimUtils) buildVimPlugin;
+    assistant-nvim = pkgs.vimUtils.buildVimPlugin {
+        name = "assistant.nvim";
+        src = pkgs.fetchFromGitHub {
+            owner = "A7Lavinraj";
+            repo = "assistant.nvim";
+            rev = "d34d2cf8ebd551b26193e70354d87571c980ca61";
+            hash = "sha256-S8iEUEpse6UeR0HhnYImaDStjzCtbCwiU2SS2Tt1LBY=";
+        };
+    };
 in
 {
-    vim.extraPlugins = {
-        "assistant.nvim" = {
-            package = buildVimPlugin {
-                name = "assistant.nvim";
-                src = fetchFromGitHub {
-                    owner = "A7Lavinraj";
-                    repo = "assistant.nvim";
-                    rev = "d34d2cf8ebd551b26193e70354d87571c980ca61";
-                    hash = "sha256-S8iEUEpse6UeR0HhnYImaDStjzCtbCwiU2SS2Tt1LBY=";
-                };
-            };
-        };
+    config.vim.lazy.plugins = {
+        package = assistant-nvim;
+        lazy = false;
+        key = [
+            {
+                key = "<leader>a";
+                action = ":Assistant<CR>";
+                description = "Assistant.nvim";
+            }
+        ];
+        setupOpts = {};
     };
 }
