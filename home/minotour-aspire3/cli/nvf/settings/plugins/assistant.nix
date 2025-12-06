@@ -14,7 +14,7 @@ in
     vim.lazy.plugins = {
         package = assistant-nvim;
         lazy = false;
-        key = [
+        keys = [
             {
                 key = "<leader>a";
                 action = ":Assistant<CR>";
