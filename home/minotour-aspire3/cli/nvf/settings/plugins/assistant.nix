@@ -1,6 +1,6 @@
 { inputs, pkgs, ... }:
 let
-    assistant-source = pkgs.vimUtils.buildNeovimPlugin {
+    assistant-source = pkgs.vimUtils.buildVimPlugin {
         name = "assistant.nvim";
         src = inputs.assistant-nvim;
     };

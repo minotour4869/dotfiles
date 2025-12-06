@@ -33,6 +33,22 @@
         "type": "github"
       }
     },
+    "assistant-nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1749048524,
+        "narHash": "sha256-S8iEUEpse6UeR0HhnYImaDStjzCtbCwiU2SS2Tt1LBY=",
+        "owner": "A7Lavinraj",
+        "repo": "assistant.nvim",
+        "rev": "d34d2cf8ebd551b26193e70354d87571c980ca61",
+        "type": "github"
+      },
+      "original": {
+        "owner": "A7Lavinraj",
+        "repo": "assistant.nvim",
+        "type": "github"
+      }
+    },
     "flake-compat": {
       "flake": false,
       "locked": {
@@ -650,6 +666,7 @@
     },
     "root": {
       "inputs": {
+        "assistant-nvim": "assistant-nvim",
         "home-manager": "home-manager",
         "hyprland": "hyprland",
         "nixcord": "nixcord",
