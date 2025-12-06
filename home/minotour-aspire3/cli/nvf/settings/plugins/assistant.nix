@@ -18,7 +18,6 @@ in
                     "assistant.mappings"
                 ];
             };
-            setupModule = "vimplugin-assistant.nvim";
             setupOpts = {};
             lazy = false;
             keys = [
