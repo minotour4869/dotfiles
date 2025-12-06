@@ -12,15 +12,17 @@ let
 in
 {
     vim.lazy.plugins = {
-        package = assistant-nvim;
-        lazy = false;
-        keys = [
-            {
-                key = "<leader>a";
-                action = ":Assistant<CR>";
-                desc = "assistant.nvim";
-            }
-        ];
-        setupOpts = {};
+        "assistant.nvim" = {
+            package = assistant-nvim;
+            lazy = false;
+            keys = [
+                {
+                    key = "<leader>a";
+                    action = ":Assistant<CR>";
+                    desc = "assistant.nvim";
+                }
+            ];
+            setupOpts = {};
+        };
     };
 }
