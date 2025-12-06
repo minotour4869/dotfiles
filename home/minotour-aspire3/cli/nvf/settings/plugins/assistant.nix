@@ -18,6 +18,7 @@ in
                     "assistant.mappings"
                 ];
             };
+            setupModule = "assistant";
             setupOpts = {};
             lazy = false;
             keys = [
