@@ -17,6 +17,7 @@ in
             lazy = false;
             keys = [
                 {
+                    mode = "n";
                     key = "<leader>a";
                     action = ":Assistant<CR>";
                     desc = "assistant.nvim";
