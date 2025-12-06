@@ -18,7 +18,7 @@ in
             {
                 key = "<leader>a";
                 action = ":Assistant<CR>";
-                description = "Assistant.nvim";
+                desc = "assistant.nvim";
             }
         ];
         setupOpts = {};
