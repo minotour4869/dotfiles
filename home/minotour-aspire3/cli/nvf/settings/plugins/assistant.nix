@@ -1,19 +1,14 @@
-{ pkgs, ... }:
+{ inputs, pkgs, ... }:
 let
-    assistant-nvim = pkgs.vimUtils.buildNeovimPlugin {
+    assistant-source = pkgs.vimUtils.buildNeovimPlugin {
         name = "assistant.nvim";
-        src = pkgs.fetchFromGitHub {
-            owner = "A7Lavinraj";
-            repo = "assistant.nvim";
-            rev = "d34d2cf8ebd551b26193e70354d87571c980ca61";
-            hash = "sha256-S8iEUEpse6UeR0HhnYImaDStjzCtbCwiU2SS2Tt1LBY=";
-        };
+        src = inputs.assistant-nvim;
     };
 in
 {
     vim.lazy.plugins = {
         "vimplugin-assistant.nvim" = {
-            package = assistant-nvim.overrideAttrs {
+            package = assistant-source.overrideAttrs {
                 nvimSkipModules = [
                     "assistant.mappings"
                 ];
