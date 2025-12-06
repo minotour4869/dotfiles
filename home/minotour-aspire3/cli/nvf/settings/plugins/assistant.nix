@@ -11,7 +11,7 @@ let
     };
 in
 {
-    config.vim.lazy.plugins = {
+    vim.lazy.plugins = {
         package = assistant-nvim;
         lazy = false;
         key = [
