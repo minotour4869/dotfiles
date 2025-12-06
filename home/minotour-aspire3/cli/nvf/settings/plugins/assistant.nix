@@ -14,6 +14,8 @@ in
     vim.lazy.plugins = {
         "vimplugin-assistant.nvim" = {
             package = assistant-nvim;
+            setupModule = "assistant.nvim";
+            setupOpts = {};
             lazy = false;
             keys = [
                 {
@@ -23,7 +25,6 @@ in
                     desc = "assistant.nvim";
                 }
             ];
-            setupOpts = {};
         };
     };
 }
