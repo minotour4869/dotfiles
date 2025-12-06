@@ -16,7 +16,7 @@ in
             package = assistant-nvim.overrideAttrs {
                 doCheck = false;
             };
-            # setupModule = "assistant.nvim";
+            setupModule = "assistant.nvim";
             setupOpts = {};
             lazy = false;
             keys = [
