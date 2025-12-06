@@ -18,7 +18,7 @@ in
                     "assistant.mappings"
                 ];
             };
-            # setupModule = "assistant.nvim";
+            setupModule = "assistant.nvim";
             setupOpts = {};
             lazy = false;
             keys = [
