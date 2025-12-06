@@ -12,7 +12,7 @@ let
 in
 {
     vim.lazy.plugins = {
-        "vimplugin-assistant.nvim" = {
+        assistant-nvim = {
             package = assistant-nvim.overrideAttrs {
                 doCheck = false;
             };
