@@ -14,7 +14,9 @@ in
     vim.lazy.plugins = {
         "vimplugin-assistant.nvim" = {
             package = assistant-nvim.overrideAttrs {
-                doCheck = false;
+                nvimSkipModules = [
+                    "assistant.mappings"
+                ];
             };
             # setupModule = "assistant.nvim";
             setupOpts = {};
