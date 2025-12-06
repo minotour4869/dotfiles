@@ -21,10 +21,7 @@
       url = "github:NotAShelf/nvf";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    assistant-nvim = {
-        url = "github:A7Lavinraj/assistant.nvim";
-        flake = false;
-    };
+    assistant-nvim.url = "github:A7Lavinraj/assistant.nvim";
   };
 
   outputs = inputs: {
