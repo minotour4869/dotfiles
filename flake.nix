@@ -15,7 +15,7 @@
       url = "github:Gerg-L/spicetify-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    nixcord.url = "github:KaylorBen/nixcord";
+    nixcord.url = "github:FlameFlag/nixcord";
     hyprland.url = "github:hyprwm/hyprland";
     nvf = {
       url = "github:NotAShelf/nvf";
