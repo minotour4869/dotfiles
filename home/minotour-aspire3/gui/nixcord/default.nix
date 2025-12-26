@@ -22,7 +22,7 @@
 			frameless = true;
 			transparent = true;
 			plugins = {
-				clearUrLs.enable = true;
+				ClearURLs.enable = true;
 				consoleJanitor.enable = true;
 				copyUserUrLs.enable = true;
 				fixCodeblockGap.enable = true;
