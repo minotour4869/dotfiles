@@ -24,7 +24,7 @@
 			plugins = {
 				ClearURLs.enable = true;
 				consoleJanitor.enable = true;
-				copyUserUrLs.enable = true;
+				CopyUserURLs.enable = true;
 				fixCodeblockGap.enable = true;
 				fixSpotifyEmbeds.enable = true;
 				friendsSince.enable = true;
