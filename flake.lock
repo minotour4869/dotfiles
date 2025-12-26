@@ -503,15 +503,15 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1766536726,
-        "narHash": "sha256-C+a/blhcgJrvnDnxHO3vkstNo0b2h9KjM2ISfGXHFm8=",
-        "owner": "FlameFlag",
+        "lastModified": 1766752246,
+        "narHash": "sha256-YA0TCK/3/pac90uiu3MUqf+jSsr1WnYVMXQigQDfWIo=",
+        "owner": "inurentto",
         "repo": "nixcord",
-        "rev": "867aabd9c47f2fff8005faca95a9a81e8f23450b",
+        "rev": "9e38de7c56008e38dac58852e7af45bb2a840367",
         "type": "github"
       },
       "original": {
-        "owner": "FlameFlag",
+        "owner": "inurentto",
         "repo": "nixcord",
         "type": "github"
       }
