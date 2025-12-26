@@ -17,7 +17,6 @@
 				"https://luckfire.github.io/amoled-cord/src/support/betterdiscord/compiled.css"
 				"https://raw.githubusercontent.com/DiscordStyles/RadialStatus/deploy/RadialStatus.theme.css"
 			];
-            autoUpdateNotification = true;
             useQuickCss = true;
 			frameless = true;
 			transparent = true;
@@ -41,7 +40,7 @@
 				shikiCodeblocks.enable = true;
 				showMeYourName = {
                     enable = true;
-                    includedNames = "{display} [{nick}] (@{user})";
+                    includedNames = "{display, friend} [{nick}] (@{user})";
                 };
 				spotifyCrack.enable = true;
 				spotifyControls.enable = true;
