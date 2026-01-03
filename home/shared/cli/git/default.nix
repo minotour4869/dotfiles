@@ -7,7 +7,7 @@
 	programs = {
 		git = {
 			enable = true;
-			userName = "minotour";
+			userName = "minotour4869";
 			userEmail = "quoclan9@gmail.com";
 			extraConfig = {
 				color.ui = true;
