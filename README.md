@@ -8,11 +8,11 @@
 And a lot of nixos dotfiles referenced that I can't remember to credit, but thank you so much. 
 
 # Info
-WM: Hyprland
-Terminal: kitty
-Shell: zsh
-Bar: waybar
-Editor: neovim
-Browser: Firefox
-Login manager: tuigreet
-Others: spicetify, nixcord, fastfetch,...
+- WM: Hyprland
+- Terminal: kitty
+- Shell: zsh
+- Bar: waybar
+- Editor: neovim
+- Browser: Firefox
+- Login manager: tuigreet
+- Others: spicetify, nixcord, fastfetch,...
